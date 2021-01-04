@@ -166,23 +166,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         
-        # raw = input('\nWould you like to see line by line raw data? Enter yes or no.\n').lower()
-        # i = 0
-        # while (raw == 'yes'):
-        #     if (i + 5) < df.shape[0]:
-        #         print(df.iloc[i:i+5, 1:3])
-        #         print(df.iloc[i:i+5, 3:6])
-        #         print(df.iloc[i:i+5, 6:11])
-        #         raw = input('\nWould you like to see line by line raw data? Enter yes or no.\n').lower()
-        #         i += 5
-        #     else:
-        #         print(df.iloc[i:df.shape[0], 1:3])
-        #         print(df.iloc[i:df.shape[0], 3:6])
-        #         print(df.iloc[i:df.shape[0], 6:11])
-        #         print("You have reached the end of the filtered data.")
-        #         raw = 'no'
-        #         break
-        
+       
         # Your suggested code was much nicer looking, thanks!
         i = 0
         while True:
