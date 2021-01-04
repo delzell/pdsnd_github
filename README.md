@@ -5,7 +5,7 @@
 Udacity Version Control Project
 
 ### Description
-Describe what your project is about and what it does
+This project showcases what I have learned about git.
 
 ### Files used
 Include the files used
