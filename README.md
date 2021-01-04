@@ -1,8 +1,8 @@
 ### Date created
-Include the date you created this project and README file.
+1/4/21
 
 ### Project Title
-Replace the Project Title
+Udacity Version Control Project
 
 ### Description
 Describe what your project is about and what it does
