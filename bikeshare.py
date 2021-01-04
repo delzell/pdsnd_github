@@ -104,9 +104,6 @@ def time_stats(df):
     # display the most common start hour
     print('Most Frequent Starting Hour:', df['Start Time'].dt.hour.mode()[0])
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
-
 #%%
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
@@ -124,9 +121,6 @@ def station_stats(df):
     df["Both Stations"] = "\nStart: " + df["Start Station"] + "\nEnd: " + df["End Station"]
     print('Most Frequently Used Station Combination:', df['Both Stations'].mode()[0])
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
-
 #%%
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
@@ -139,9 +133,6 @@ def trip_duration_stats(df):
 
     # display mean travel time
     print("Average Travel Time: ", df["Trip Duration"].mean())
-
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
 
 #%%
 def user_stats(df):
@@ -167,9 +158,6 @@ def user_stats(df):
     except Exception:
         pass
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
-
 #%%
 def main():
     while True:
@@ -181,24 +169,8 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         
-        # raw = input('\nWould you like to see line by line raw data? Enter yes or no.\n').lower()
-        # i = 0
-        # while (raw == 'yes'):
-        #     if (i + 5) < df.shape[0]:
-        #         print(df.iloc[i:i+5, 1:3])
-        #         print(df.iloc[i:i+5, 3:6])
-        #         print(df.iloc[i:i+5, 6:11])
-        #         raw = input('\nWould you like to see line by line raw data? Enter yes or no.\n').lower()
-        #         i += 5
-        #     else:
-        #         print(df.iloc[i:df.shape[0], 1:3])
-        #         print(df.iloc[i:df.shape[0], 3:6])
-        #         print(df.iloc[i:df.shape[0], 6:11])
-        #         print("You have reached the end of the filtered data.")
-        #         raw = 'no'
-        #         break
-        
-        # Your suggested code was much nicer looking, thanks!
+       
+        # This code prints the raw data.
         i = 0
         while True:
             display_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
