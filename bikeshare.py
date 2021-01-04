@@ -167,7 +167,7 @@ def main():
         user_stats(df)
         
        
-        # Your suggested code was much nicer looking, thanks!
+        # This code prints the raw data.
         i = 0
         while True:
             display_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
